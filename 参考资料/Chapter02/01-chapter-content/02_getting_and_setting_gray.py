@@ -12,13 +12,7 @@ import cv2
 # Second argument is a flag which specifies the way image should be read.
 # Value needed for loading a image in grayscale: 'cv2.IMREAD_GRAYSCALE'.
 # load OpenCV logo image:
-
-import os
-dirname, filename = os.path.split(os.path.abspath( __file__))
-os.chdir(dirname)
-
 gray_img = cv2.imread('logo.png', cv2.IMREAD_GRAYSCALE)
-# gray_img = cv2.imread('D:\\project\\Mastering-OpenCV-4-with-Python\\Chapter02\\01-chapter-content\\logo.png', cv2.IMREAD_GRAYSCALE)
 
 # To get the dimensions of the image use img.shape
 # img.shape returns a tuple of number of rows, columns and channels (if image is color)
@@ -101,7 +95,6 @@ print("Pixel at (6,40) - Intensity: {}".format(i))
 # Sometimes, you will have to play with certain region of images rather than one pixel at a time
 # In this case, we get the top left corner of the image:
 top_left_corner = gray_img[0:50, 0:50]
-
 
 # We show this ROI:
 cv2.imshow("top left corner original", top_left_corner)

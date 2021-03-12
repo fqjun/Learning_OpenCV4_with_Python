@@ -53,7 +53,7 @@ def test_convert_to_grayscale():
     """
     print("testing test_convert_to_grayscale")
     # load the image from disk
-    bgr_image = load_image("D:\\\project\Mastering-OpenCV-4-with-Python\\\Chapter01\02-minimal-opencv-python-project\\helloopencv\\images\\logo.png")
+    bgr_image = load_image("images/logo.png")
     # convert image to black and white
     gray_image = convert_to_grayscale(bgr_image)
     bgr_height, bgr_width, bgr_channels = bgr_image.shape

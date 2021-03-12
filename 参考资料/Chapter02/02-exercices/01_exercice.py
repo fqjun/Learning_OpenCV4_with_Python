@@ -7,7 +7,7 @@ import cv2
 
 
 # load OpenCV logo image:
-img = cv2.imread('D:\\project\\Mastering-OpenCV-4-with-Python\\Chapter02\\02-exercices\\logo.png')
+img = cv2.imread('logo.png')
 
 # Get the shape of the image:
 dimensions = img.shape
@@ -21,7 +21,7 @@ if len(dimensions) == 3:
     print("color image!")
 
 # Load the same image but in grayscale:
-gray_img = cv2.imread('D:\\project\\Mastering-OpenCV-4-with-Python\\Chapter02\\02-exercices\\logo.png', cv2.IMREAD_GRAYSCALE)
+gray_img = cv2.imread('logo.png', cv2.IMREAD_GRAYSCALE)
 
 # Get again the img.shape properties:
 dimensions = gray_img.shape

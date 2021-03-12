@@ -7,16 +7,12 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-# import os
-# dirname, filename = os.path.split(os.path.abspath( __file__))
-# os.chdir(dirname)
 
 # Load image using cv2.imread:
-img_OpenCV = cv2.imread('D:\\project\\Mastering-OpenCV-4-with-Python\\Chapter02\\01-chapter-content\\logo.png')
+img_OpenCV = cv2.imread('logo.png')
 
 # Split the loaded image into its three channels (b, g, r):
 b, g, r = cv2.split(img_OpenCV)
-
 
 # Merge again the three channels but in the RGB format:
 img_matplotlib = cv2.merge([r, g, b])
@@ -28,7 +24,7 @@ plt.imshow(img_OpenCV)
 plt.title('img OpenCV')
 # This will show the image in true color:
 plt.subplot(122)
-plt.imshow(img_matplotlib)  
+plt.imshow(img_matplotlib)
 plt.title('img matplotlib')
 plt.show()
 
@@ -53,7 +49,6 @@ cv2.destroyAllWindows()
 B = img_OpenCV[:, :, 0]
 G = img_OpenCV[:, :, 1]
 R = img_OpenCV[:, :, 2]
-print(B)
 
 # Transform the image BGR to RGB using Numpy capabilities:
 img_RGB = img_OpenCV[:, :, ::-1]

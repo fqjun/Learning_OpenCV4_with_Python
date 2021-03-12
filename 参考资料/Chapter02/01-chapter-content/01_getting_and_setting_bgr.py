@@ -9,14 +9,7 @@ import cv2
 # Use the function cv2.imread() to read an image.
 # The image should be in the working directory or a full path of image should be provided.
 # load OpenCV logo image:
-
-import os
-dirname, filename = os.path.split(os.path.abspath( __file__))
-os.chdir(dirname)
-
-#img = cv2.imread("D:\\project\\Mastering-OpenCV-4-with-Python\\Chapter02\\01-chapter-content\\logo.png")
-img = cv2.imread("logo.png")
-
+img = cv2.imread('logo.png')
 
 # To get the dimensions of the image use img.shape
 # img.shape returns a tuple of number of rows, columns and channels (if image is color)
@@ -33,8 +26,6 @@ print(dimensions)
 # Therefore, we can also get the dimensions in three independent variables.
 # Get height, width and the number of channels of the input image
 (h, w, c) = img.shape
-
-
 
 # Now, we can print these three variables
 # Print (h, w, c) values:
