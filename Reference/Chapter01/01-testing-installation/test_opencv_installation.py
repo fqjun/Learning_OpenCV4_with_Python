@@ -5,6 +5,12 @@ Testing OpenCV installation
 # import the necessary packages (in this case, OpenCV package)
 import cv2
 
+
+# 解决相对路径报错的问题
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
+
 # Use the function cv2.imread() to read an image.
 # The image should be in the working directory or a full path of image should be provided.
 # load OpenCV logo image: 
