@@ -5,6 +5,9 @@ How to check if img is color or grayscale
 # import required packages
 import cv2
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
 
 # load OpenCV logo image:
 img = cv2.imread('logo.png')

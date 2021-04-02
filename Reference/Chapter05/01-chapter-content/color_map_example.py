@@ -6,6 +6,9 @@ Example for testing colors maps in OpenCV
 import cv2
 import matplotlib.pyplot as plt
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
 
 def show_with_matplotlib(color_img, title, pos):
     """Shows an image using matplotlib capabilities"""

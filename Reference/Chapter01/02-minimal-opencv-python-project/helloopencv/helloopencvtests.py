@@ -11,6 +11,10 @@ from helloopencv import convert_to_grayscale
 
 import cv2
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
+
 
 def test_show_message():
     """Test for show_message

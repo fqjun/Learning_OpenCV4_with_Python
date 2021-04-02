@@ -5,6 +5,10 @@ Accessing, manipulating pixels in OpenCV (getting and setting methods) with gray
 # import the necessary packages
 import cv2
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
+
 
 # Use the function cv2.imread() to read an image.
 # The image should be in the working directory or a full path of image should be provided.

@@ -7,6 +7,10 @@ import cv2
 # use '$ python -m pydoc -w helloopencv' to generate documentation
 
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
+
 def show_message():
     """this function returns a message
 
