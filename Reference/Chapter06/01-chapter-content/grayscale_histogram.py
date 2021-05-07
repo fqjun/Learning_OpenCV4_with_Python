@@ -7,6 +7,9 @@ import numpy as np
 import cv2
 from matplotlib import pyplot as plt
 
+import os
+dirname, filename = os.path.split(os.path.abspath( __file__))
+os.chdir(dirname)
 
 def show_img_with_matplotlib(color_img, title, pos):
     """Shows an image using matplotlib capabilities"""
